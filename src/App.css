@@ -6,11 +6,12 @@ colors: #e7eaf6, #a2a8d3, #38598b, #113f67
 }
 /* Navbar*/
 .navbar {
-  text-align: center;
-  background-color: #a2a8d3;
+  background-color: transparent;
+  margin-left: auto;
+
 }
 .navbar a {
-  font-size: medium;
+  font-size: x-large;
   color: #113f67;
   text-decoration: none;
   padding: 5px;
@@ -28,4 +29,53 @@ colors: #e7eaf6, #a2a8d3, #38598b, #113f67
 }
 .fa:hover {
   color: #38598b;
+}
+
+.socialBar{
+  flex-direction: column;
+}
+
+/*Header*/
+.header {
+  display: flex;
+}
+.header img {
+  display: inline-block;
+  vertical-align: top;
+  width: 80px;
+  height: 80px;
+  margin: 8px;
+}
+
+/*home content*/
+.Home-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 75vh; /* Adjust this to your preference */
+}
+
+.introduction {
+  text-align: center;
+  margin-right: 20px; /* Add some spacing between the introduction and socials */
+}
+
+.Socials {
+  display: flex;
+  align-items: flex-start; /* Align items to the left */
+}
+
+.myPic-container {
+  display: flex;
+  align-items: center;
+}
+
+/*Picture*/
+.myPic{
+  transition: ease 1000ms;
+  width: 300px;
+  border-radius: 50%;
+  border: #113f67 solid 5px;
+  margin-top: 20px;
+  margin-left: 50px;
 }

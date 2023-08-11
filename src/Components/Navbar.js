@@ -4,12 +4,13 @@ import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
-    <ul className='navbar'>
-      <Link exact to="/">
-        About
-      </Link>
+    <ul className="navbar">
+      <Link to="/">Home</Link>
+      <Link to="/about">About</Link>
       <Link to="/skills">Skills</Link>
-      <Link to="/resume">Resume</Link>
+      <a href="/Personal/portfolio_website/public/RME!.docx" download>
+        Resume
+      </a>
     </ul>
   );
 }
