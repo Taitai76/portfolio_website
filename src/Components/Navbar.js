@@ -7,7 +7,7 @@ function Navbar() {
     <ul className="navbar">
       <Link to="/">Home</Link>
       <Link to="/about">About</Link>
-      <Link to="/skills">Skills</Link>
+      <Link to="/portfolio">Portfolio</Link>
       <a href="/Personal/portfolio_website/public/RME!.docx" download>
         Resume
       </a>
