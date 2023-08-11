@@ -3,12 +3,13 @@ colors: #e7eaf6, #a2a8d3, #38598b, #113f67
 */
 *{
   background-color: #e7eaf6;
+  font-family: Palatino, "Palatino LT STD", "Palatino Linotype", "Book Antiqua", Georgia, serif;
 }
 /* Navbar*/
 .navbar {
   background-color: transparent;
   margin-left: auto;
-
+  font-weight: bold;
 }
 .navbar a {
   font-size: x-large;
@@ -23,6 +24,7 @@ colors: #e7eaf6, #a2a8d3, #38598b, #113f67
 
 /* Social Links*/
 .fa {
+  font-size: large;
   text-decoration: none;
   color: #113f67;
   padding: 8px;
@@ -32,7 +34,9 @@ colors: #e7eaf6, #a2a8d3, #38598b, #113f67
 }
 
 .socialBar{
+  display: flex;
   flex-direction: column;
+  align-items: flex-start;
 }
 
 /*Header*/
@@ -52,17 +56,19 @@ colors: #e7eaf6, #a2a8d3, #38598b, #113f67
   display: flex;
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
-  height: 75vh; /* Adjust this to your preference */
+  height: 70vh; /* Adjust this to your preference */
+  font-weight: bold;
 }
 
 .introduction {
   text-align: center;
-  margin-right: 20px; /* Add some spacing between the introduction and socials */
+  margin-right: 20px; 
+  margin-left: 50px;
 }
 
 .Socials {
   display: flex;
-  align-items: flex-start; /* Align items to the left */
+  margin-right: 30px;
 }
 
 .myPic-container {
@@ -78,4 +84,19 @@ colors: #e7eaf6, #a2a8d3, #38598b, #113f67
   border: #113f67 solid 5px;
   margin-top: 20px;
   margin-left: 50px;
+}
+
+.about-button {
+  background-color: #113f67; 
+  color: white; 
+  border: none;
+  padding: 10px 20px; 
+  border-radius: 5px;
+  font-size: 16px; 
+  cursor: pointer;
+  transition: background-color 0.3s ease; 
+
+  &:hover {
+    background-color: #38598b; /* Change background color on hover */
+  }
 }
