@@ -1,6 +1,8 @@
 import React from 'react'
 import Socials from './Socials'
 import portrait from "../ProfilePic.jpeg";
+import { Link } from "react-router-dom";
+
 function Home() {
   return (
     <div className="Home-container">
@@ -11,7 +13,9 @@ function Home() {
         <p>Hello, I'm</p>
         <h1>Mohammed Taitai</h1>
         <p>Full stack Developer</p>
-        <button class="about-button">About Me</button>
+        <Link to="/about" class="about-button">
+          About Me
+        </Link>
       </div>
       <div className="myPic-container">
         <img src={portrait} class="myPic" alt="Mohammed Taitai"></img>

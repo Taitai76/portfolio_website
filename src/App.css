@@ -89,6 +89,7 @@ colors: #e7eaf6, #a2a8d3, #38598b, #113f67
 
 .about-button {
   background-color: #113f67; 
+  text-decoration: none;
   color: white; 
   border: none;
   padding: 10px 20px; 
