@@ -83,7 +83,7 @@ colors: #e7eaf6, #a2a8d3, #38598b, #113f67
   width: 300px;
   border-radius: 50%;
   border: #113f67 solid 5px;
-  margin-top: 20px;
+  margin-top: 10px;
   margin-left: 50px;
 }
 
@@ -101,4 +101,26 @@ colors: #e7eaf6, #a2a8d3, #38598b, #113f67
   &:hover {
     background-color: #38598b; /* Change background color on hover */
   }
+}
+
+.skillslist {
+  border-width: 2px;
+  border-color: #113f67;
+}
+
+.projectListContainer{
+  
+}
+.projectList li{
+  border: #113f67 solid 2px;
+}
+
+/*about page*/
+
+.about-page h1 {
+  text-align: center;
+}
+.about-page p {
+  text-align: center;
+  font-size: large;
 }
