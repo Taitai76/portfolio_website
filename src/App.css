@@ -103,24 +103,79 @@ colors: #e7eaf6, #a2a8d3, #38598b, #113f67
   }
 }
 
-.skillslist {
-  border-width: 2px;
-  border-color: #113f67;
-}
-
-.projectListContainer{
-  
-}
 .projectList li{
   border: #113f67 solid 2px;
 }
-
 /*about page*/
-
-.about-page h1 {
-  text-align: center;
+.about-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
 }
-.about-page p {
-  text-align: center;
-  font-size: large;
+
+.text-and-image {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.about-text {
+    flex: 3;
+    padding-right: 20px;
+}
+
+.about-pic {
+    flex: 1;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.lower-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 20px;
+}
+
+.new-about-pic {
+    flex: 1;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.skills-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 150px;
+}
+
+.skills-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 960px) {
+    .text-and-image, .lower-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-pic, .new-about-pic, .skills-container {
+        max-width: 100%;
+        margin-right: 0;
+    }
 }
