@@ -22,7 +22,11 @@ export default function ProjectCard({
       )}
       <div className="project-links">
         {demo && (
-          <a href={demo} target="_blank" rel="noreferrer">
+          <a
+            href={demo.startsWith("http") ? demo : `https://${demo}`}
+            target="_blank"
+            rel="noreferrer"
+          >
             Demo
           </a>
         )}
