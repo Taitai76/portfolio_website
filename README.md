@@ -68,3 +68,22 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+## Adding Projects
+
+To add a project to the portfolio, open `src/data/projects.js` and insert a new object into the exported array. Each object should follow the structure:
+
+```javascript
+{
+  id: 2,
+  title: "Another Project",
+  description: "Short description",
+  tech: ["React", "Node"],
+  image: "path/to/image.jpg",
+  demo: "https://demo.example.com",
+  repo: "https://github.com/username/project"
+}
+```
+
+Add as many projects as you like; just ensure each has a unique `id`.

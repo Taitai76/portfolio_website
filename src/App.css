@@ -1,8 +1,15 @@
 /*
 colors: #e7eaf6, #a2a8d3, #38598b, #113f67
 */
-*{
-  background-color: #e7eaf6;
+:root {
+  --light: #e7eaf6;
+  --medium: #a2a8d3;
+  --dark: #38598b;
+  --navy: #113f67;
+}
+
+body {
+  background-color: var(--light);
   font-family: Palatino, "Palatino LT STD", "Palatino Linotype", "Book Antiqua", Georgia, serif;
 }
 /* Navbar*/
@@ -12,26 +19,35 @@ colors: #e7eaf6, #a2a8d3, #38598b, #113f67
   font-weight: bold;
   margin-right: 10px;
 }
+.navbar ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.navbar li {
+  margin: 0 5px;
+}
 .navbar a {
   font-size: x-large;
-  color: #113f67;
+  color: var(--navy);
   text-decoration: none;
   padding: 5px;
   background-color: transparent;
 }
 .navbar a:hover {
-  color: #38598b;
+  color: var(--dark);
 }
 
 /* Social Links*/
 .fa {
   font-size: large;
   text-decoration: none;
-  color: #113f67;
+  color: var(--navy);
   padding: 8px;
 }
 .fa:hover {
-  color: #38598b;
+  color: var(--dark);
 }
 
 .socialBar{
@@ -57,7 +73,7 @@ colors: #e7eaf6, #a2a8d3, #38598b, #113f67
   display: flex;
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
-  height: 70vh; /* Adjust this to your preference */
+  height: 70vh; 
   font-weight: bold;
 }
 
@@ -82,29 +98,29 @@ colors: #e7eaf6, #a2a8d3, #38598b, #113f67
   transition: ease 1000ms;
   width: 300px;
   border-radius: 50%;
-  border: #113f67 solid 5px;
+  border: var(--navy) solid 5px;
   margin-top: 10px;
   margin-left: 50px;
 }
 
 .about-button {
-  background-color: #113f67; 
+  background-color: var(--navy);
   text-decoration: none;
-  color: white; 
+  color: white;
   border: none;
-  padding: 10px 20px; 
+  padding: 10px 20px;
   border-radius: 5px;
-  font-size: 16px; 
+  font-size: 16px;
   cursor: pointer;
-  transition: background-color 0.3s ease; 
+  transition: background-color 0.3s ease;
 
   &:hover {
-    background-color: #38598b; /* Change background color on hover */
+    background-color: var(--dark); /* Change background color on hover */
   }
 }
 
 .projectList li{
-  border: #113f67 solid 2px;
+  border: var(--navy) solid 2px;
 }
 /*about page*/
 .about-page {
@@ -132,6 +148,59 @@ colors: #e7eaf6, #a2a8d3, #38598b, #113f67
     max-width: 300px;
     height: auto;
     border-radius: 10px;
+}
+
+/* Portfolio grid and cards */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.project-card {
+  background-color: #fff;
+  border: 1px solid #a2a8d3;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.project-card .tech-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.project-card .tech-list li {
+  background-color: #a2a8d3;
+  color: #113f67;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.875rem;
+}
+
+.project-card .project-links {
+  margin-top: 0.5rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.project-card .project-links a {
+  color: #113f67;
+  text-decoration: none;
+}
+
+.project-card .project-links a:hover {
+  color: #38598b;
 }
 
 .lower-section {

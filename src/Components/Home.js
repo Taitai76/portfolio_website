@@ -13,12 +13,12 @@ function Home() {
         <p>Hello, I'm</p>
         <h1>Mohammed Taitai</h1>
         <p>Full stack Developer</p>
-        <Link to="/about" class="about-button">
+        <Link to="/about" className="about-button">
           About Me
         </Link>
       </div>
       <div className="myPic-container">
-        <img src={portrait} class="myPic" alt="Mohammed Taitai"></img>
+        <img src={portrait} className="myPic" alt="Mohammed Taitai"></img>
       </div>
     </div>
   );
