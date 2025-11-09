@@ -248,3 +248,150 @@ li {
         margin-right: 0;
     }
 }
+
+/* Wrapper + top section */
+.about-wrapper {
+  display: grid;
+  gap: 2rem;
+  padding: 2rem clamp(1rem, 3vw, 3rem);
+}
+
+.about-hero {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 2rem;
+  align-items: center;
+}
+@media (max-width: 900px) {
+  .about-hero {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Cards */
+.about-card,
+.skills-card {
+  background: #ffffff;
+  border: 1px solid var(--medium);
+  border-radius: 16px;
+  padding: clamp(1rem, 2.5vw, 1.75rem);
+  box-shadow: 0 10px 30px rgba(17, 63, 103, 0.08); /* uses --navy tone */
+}
+
+/* Typography */
+.about-title {
+  font-size: clamp(1.8rem, 2.8vw, 2.4rem);
+  margin: 0 0 0.5rem;
+  color: var(--navy);
+}
+
+.about-lede {
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: #222;
+  margin: 0 0 0.75rem;
+}
+
+.about-body {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #333;
+  margin: 0.5rem 0;
+}
+
+.about-facts {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: .5rem .75rem;
+}
+.about-facts li {
+  background: #f6f8fa;
+  border-radius: 10px;
+  padding: .6rem .8rem;
+  font-size: .95rem;
+  border: 1px solid #e5e7eb;
+}
+.about-facts li span {
+  display: inline-block;
+  font-weight: 600;
+  color: var(--navy);
+  margin-right: .4rem;
+}
+
+/* Images */
+.about-portrait,
+.about-secondary {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  object-fit: cover;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* Lower section (secondary image + skills) */
+.about-lower {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 2rem;
+  align-items: start;
+}
+@media (max-width: 900px) {
+  .about-lower {
+    grid-template-columns: 1fr;
+  }
+}
+
+.skills-card h2 {
+  margin-top: 0;
+  font-size: clamp(1.4rem, 2.2vw, 1.8rem);
+  color: var(--navy);
+}
+
+/* Skill groups + chips */
+.skill-group {
+  margin-top: 1rem;
+}
+.skill-group h3 {
+  margin: 0 0 .5rem;
+  font-size: 1.05rem;
+  color: var(--navy);
+}
+
+.skill-chips {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: .5rem;
+  flex-wrap: wrap;
+}
+
+.chip {
+  background: #eef2ff;                 /* soft indigo */
+  color: #1e293b;
+  border: 1px solid #c7d2fe;           /* complements your palette */
+  padding: .35rem .6rem;
+  border-radius: 999px;
+  font-size: .9rem;
+  line-height: 1;
+  white-space: nowrap;
+  transition: background .15s ease;
+}
+.chip:hover {
+  background: #e0e7ff;
+}
+
+/* Responsive tweaks to match your layout system */
+@media (max-width: 960px) {
+  .about-wrapper {
+    padding: 1.25rem;
+  }
+}
+
+/* ===== Fix: proper hover rule for the About button (no SCSS nesting) ===== */
+.about-button:hover {
+  background-color: var(--dark);
+}

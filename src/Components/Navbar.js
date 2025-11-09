@@ -16,7 +16,7 @@ function Navbar() {
           <Link to="/portfolio">Portfolio</Link>
         </li>
         <li>
-          <a href={process.env.PUBLIC_URL + "/Resume1.pdf"} download>
+          <a href={process.env.PUBLIC_URL + "/Resume.docx"} download>
             Resume
           </a>
         </li>
